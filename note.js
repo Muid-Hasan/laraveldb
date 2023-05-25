@@ -26,6 +26,7 @@
 22.php artisan db:seed
 
 23. php artisan tinker
+24.App\Models\Post::factory(5)->create()
 
 
 

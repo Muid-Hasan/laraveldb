@@ -13,6 +13,17 @@ class PostSeeder extends Seeder
      */
     public function run(): void
     {
+        
+
+
         // Post::factory(5)->create();
+        Post::create([
+            'title' =>"Post One",
+            'slug' =>"post-one",
+            'excerpt' =>"Excerpt of Post One",
+            'description'=>"Description of Post One",
+            'is_published' =>true,
+            'min_to_read' =>4
+        ]);
     }
 }
