@@ -1,5 +1,5 @@
 /*
-Important Commands:
+👌Important Commands For migration:
 1. php artisan db:show
 2. php artisan make:migration create_posts_table
 3. php artisan migrate
@@ -15,9 +15,17 @@ Important Commands:
 13.php artisan schema:dump  //not working
 14.php artisan schema:dump --prune // not working
 15.php artisan make:migration add_soft_deletes_in_posts_table --table=posts
-16. composer require doctrine/dbal
+16. composer require doctrine/dbal  //if we use mysql older version
 17.php artisan make:migration rename_description_to_content_on_posts_table --table=posts
 18.php artisan make:migration drop_deleted_at_from_posts_table --table=posts
+
+👌Import commands for Factory :
+19.php artisan make:factory PostFactory
+20.php artisan make:seeder PostSeeder
+21. php artisan db:seed --class=PostSeeder
+22.php artisan db:seed
+
+23. php artisan tinker
 
 
 
